@@ -29,7 +29,6 @@ export default function Todo() {
     let newEditItem = items.find((elem, ind) => {
       return id === ind;
     });
-    console.log(id);
     const finalData = items.splice(id, 1);
     setEdit(id);
     setInputData(finalData.toString());
